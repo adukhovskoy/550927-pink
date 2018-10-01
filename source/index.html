@@ -28,17 +28,17 @@
           <h3 class="visually-hidden">Установка приложения</h3>
           <p class="get-app__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           <ul class="get-app__links-list">
-            <li class="get-app__link-item appstore">
+            <li class="get-app__link-item get-app__link-item--appstore">
               <a href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Ссылка на Apple Store</span></a>
             </li>
-            <li class="get-app__link-item googleplay">
+            <li class="get-app__link-item get-app__link-item--googleplay">
               <a href="https://play.google.com/store/apps"><span class="visually-hidden">Ссылка на Google Play</span></a>
             </li>
-            <li class="get-app__link-item windowstore">
+            <li class="get-app__link-item get-app__link-item--windowstore">
               <a href="https://www.microsoft.com/en-us/store/appsvnext/windows-phone">Ссылка на Windows Store<span class="visually-hidden"></span></a>
             </li>
           </ul>
-          <button class="get-app__button" type="button">Скачать приложение</button>
+          <button class="button get-app__button" type="button">Скачать приложение</button>
         </div>
       </section>
       <section class="features">
@@ -77,7 +77,7 @@
         </ul>
       </section>
       <section class="prices">
-        <h2>Цены</h2>
+        <h2 class="visually-hidden">Цены</h2>
         <ul class="prices__list">
           <li class="prices__item">
             <table class="tariff tariff--hit">
@@ -157,12 +157,20 @@
     <footer class="page-footer">
       <section class="contacts">
         <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
-        <h3 class="contacts__type">Звоните:</h3>
-        <p class="contacts__value">+7(812)555-66-66</p>
-        <h3 class="contacts__type">Пишите:</h3>
-        <p class="contacts__value">main@htmlacademy.ru</p>
-        <h3 class="contacts__type">Приезжайте в гости:</h3>
-        <p class="contacts__value">ул. Большая Конбшенная, 19/8</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__type">Звоните:</h3>
+            <p class="contacts__value">+7(812)555-66-66</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__type">Пишите:</h3>
+            <p class="contacts__value">main@htmlacademy.ru</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__type">Приезжайте в гости:</h3>
+            <p class="contacts__value">ул. Большая Конбшенная, 19/8</p>
+          </li>
+        </ul>
       </section>
       <section class="map"></section>
     </footer>
