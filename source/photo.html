@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="">
+        <img src="img/pink-logo.svg" width="75" height="22" alt="Пинк">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
+        </ul>
+      <button class="page-header__menu-botton button" type="button"></button>
+      </nav>
+    </header>
+    <main>
+      <section class="gallery">
+        <h2 class="gallery__header">Фотографии пользователей</h2>
+        <p class="gallery__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--best-today">
+            <img class="gallery__image" src="img\user_image1.png" alt="Фотография, сделанная пользователем">
+            <p class="gallery__username">Анна</p>
+            <p class="gallery__user-last-activity"><span class="visually-hidden">Был(а)в сети </span>(5 минут назад)</p>
+            <p class="gallery__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="gallery_likes">Нравится: 215</p>
+            <button class="button gallery_like-button"><span class="visually-hidden">Нравится</span></button>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img\user_image2.png" alt="Фотография, сделанная пользователем">
+            <p class="gallery__username">Левон</p>
+            <p class="gallery__user-last-activity"><span class="visually-hidden">Был(а)в сети </span>(5 часов назад)</p>
+            <p class="gallery__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="gallery_likes">Нравится: 356</p>
+            <button class="button gallery_like-button"><span class="visually-hidden">Нравится</span></button>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img\user_image3.png" alt="Фотография, сделанная пользователем">
+            <p class="gallery__username">Антон</p>
+            <p class="gallery__user-last-activity"><span class="visually-hidden">Был(а)в сети </span>(12 часов  назад)</p>
+            <p class="gallery__desc">Соседи будут рады!</p>
+            <p class="gallery_likes">Нравится: 666</p>
+            <button class="button gallery_like-button"><span class="visually-hidden">Нравится</span></button>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img\user_image4.png" alt="Фотография, сделанная пользователем">
+            <p class="gallery__username">Борис</p>
+            <p class="gallery__user-last-activity"><span class="visually-hidden">Был(а)в сети </span>(20 часов назад)</p>
+            <p class="gallery__desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="gallery_likes">Нравится: 215</p>
+            <button class="button gallery_like-button"><span class="visually-hidden">Нравится</span></button>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img\user_image5.png" alt="Фотография, сделанная пользователем">
+            <p class="gallery__username">Сергей</p>
+            <p class="gallery__user-last-activity"><span class="visually-hidden">Был(а)в сети </span>(25 часов назад)</p>
+            <p class="gallery__desc">Самая кубанская в мире!</p>
+            <p class="gallery_likes">Нравится: 4</p>
+            <button class="button gallery_like-button"><span class="visually-hidden">Нравится</span></button>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img\user_image6.png" alt="Фотография, сделанная пользователем">
+            <p class="gallery__username">Максим</p>
+            <p class="gallery__user-last-activity"><span class="visually-hidden">Был(а)в сети </span>(40 часов назад)</p>
+            <p class="gallery__desc">Где снег-то?</p>
+            <p class="gallery_likes">Нравится: 150</p>
+            <button class="button gallery_like-button"><span class="visually-hidden">Нравится</span></button>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img\user_image7.png" alt="Фотография, сделанная пользователем">
+            <p class="gallery__username">Надежда</p>
+            <p class="gallery__user-last-activity"><span class="visually-hidden">Был(а)в сети </span>(45 часов назад)</p>
+            <p class="gallery__desc">Всем GM и взаимные лайки!</p>
+            <p class="gallery_likes">Нравится: 2560</p>
+            <button class="button gallery_like-button"><span class="visually-hidden">Нравится</span></button>
+          </li>
+        </ul>
+      </section>
+      <section class="photo-upload">
+        <h2 class="visually-hidden">Форма для редактирования и отправления фото</h2>
+        <p class="photo-upload__header">Затмите их всех! Выкладывайте всё, что накопилось в телефоне!</p>
+        <img class="photo-upload__photo" src="img/upload.png" alt="Фото для загрузки">
+        <form  class="photo-upload__form" action="submit">
+          <ul class="photo-upload__instruments__list">
+            <li class="photo-upload__instruments__item">
+              <button class="photo-upload__instrument photo-upload__instrument--crop photo-upload__instrument--used" type="button" action="submit"><span class="visuallyhidden">Обрезать</span></button>
+            </li>
+            <li class="photo-upload__instruments__item">
+              <button class="photo-upload__instrument photo-upload__instrument--fill" type="button" action="submit"><span class="visuallyhidden"></span>Залить</button>
+            </li>
+            <li class="photo-upload__instruments__item">
+              <button class="photo-upload__instrument photo-upload__instrument--reverse" type="button" action="submit"><span class="visuallyhidden"></span>Негатив</button>
+            </li>
+          </ul>
+          <button class="button photo-upload__upload-button" action="submit">Запостить</button>
+          <button class="button photo-upload__cancel-button photo-upload__cancel--disabled" action="submit">Отменить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo pink-logo">
+        <img class="pink-logo__img" src="img/pink-logo-glasses.svg" alt="Лого сайта пинк">
+        <p class="pink-logo__text">Пинк</p>
+      </div>
+      <ul class="page-footer__social social__list">
+        <li class="social__item social__item--twitter"><a href="twitter"><img src="img/twitter.svg" alt="Мы в twitter"></a><span class="visually-hidden">Мы в twitter</span></li>
+        <li class="social__item social__item--facebook"><a href="facebook"><img src="img/facebook.svg" alt="Мы в facebook"></a><span class="visually-hidden">Мы в facebook</span></li>
+        <li class="social__item social__item--youtube"><a href="youtube"><img src="img/youtube.svg" alt="Мы в youtube"></a><span class="visually-hidden">Мы в youtube</span></li>
+      </ul>
+      <div class="page-footer__logo htmlacademy-logo">
+        <p>Разработано<span class="visually-hidden"> в HTML Academy</span></p>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Лого htmlacademy">
+      </div>
+    </footer>
+  </body>
+</html>
