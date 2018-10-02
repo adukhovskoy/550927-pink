@@ -13,7 +13,7 @@
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="competition.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
         </ul>
       <button class="page-header__menu-botton button" type="button"></button>
@@ -24,68 +24,71 @@
         <h2 class="contest__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
         <p class="contest__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
         <form class="contest__form" action="submit">
-          <label class="contest__label" for="">
-            Фамилия:
-            <input class="contest__input contest__input--type--text contest__input--mandatory" type="text">
-          </label>
-          <label class="contest__label" for="">
-            Имя:
-            <input class="contest__input contest__input--type--text contest__input--mandatory" type="text">
-          </label>
-          <label class="contest__label" for="">
-            Отчество:
-            <input class="contest__input contest__input--type--text contest__input" type="text">
-          </label>
-          <label class="contest__label" for="">
-            Номер телефона:
-            <input class="contest__input contest__input--type--text contest__input" type="text">
-          </label>
-          <label class="contest__label" for="">
-            Адрес  почты:
-            <input class="contest__input contest__input--type--text contest__input--mandatory" type="text">
-          </label>
-          <div class="contest__archivements">
-            <p>Ваши безбашенные достижения в путешествии</p>
+          <fieldset class="contest__label">
+            <legend class="visually-hidden">Поля для заполнения ФИО, телефона и email</legend>
             <label class="contest__label" for="">
+              Фамилия:
+              <input class="contest__input contest__input--type--text contest__input--mandatory" type="text">
+            </label>
+            <label class="contest__label" for="">
+              Имя:
+              <input class="contest__input contest__input--type--text contest__input--mandatory" type="text">
+            </label>
+            <label class="contest__label" for="">
+              Отчество:
+              <input class="contest__input contest__input--type--text contest__input" type="text">
+            </label>
+            <label class="contest__label" for="">
+              Номер телефона:
+              <input class="contest__input contest__input--type--text contest__input" type="text">
+            </label>
+            <label class="contest__label" for="">
+              Адрес  почты:
+              <input class="contest__input contest__input--type--text contest__input--mandatory" type="text">
+            </label>
+          </fieldset>
+          <fieldset class="contest__archivements">
+            <legend class="contest__label">Ваши безбашенные достижения в путешествии</legend>
+            <label class="contest__label">
               <input class="contest__input contest__input--type--chekbox-v contest__input--checked" type="checkbox">
               Сделал селфи с акулой
             </label>
-            <label class="contest__label" for="">
+            <label class="contest__label">
               <input class="contest__input contest__input--type--chekbox-v contest__input--checked" type="checkbox">
               Обгорел на пляже
             </label>
-            <label class="contest__label" for="">
+            <label class="contest__label">
               <input class="contest__input contest__input--type--chekbox-v" type="checkbox">
               Видел Чака Норриса
             </label>
-            <label class="contest__label" for="">
+            <label class="contest__label">
               <input class="contest__input contest__input--type--chekbox-v" type="checkbox">
               Накупил сувениров
             </label>
-            <label class="contest__label" for="">
+            <label class="contest__label">
               <input class="contest__input contest__input--type--chekbox-v contest__input--checked" type="checkbox">
-              Ударжал башню
+              Удержал башню
             </label>
-            <label class="contest__label" for="">
+            <label class="contest__label">
               <input class="contest__input contest__input--type--chekbox-v" type="checkbox">
               Разгромил отель
             </label>
-          </div>
-          <div class="contest__app">
-            <p class="contest__label">С каким приложением путешествовали?</p>
-            <label class="contest__label contest__label--for-radio" for="">
+          </fieldset>
+          <fieldset class="contest__app">
+            <legend class="contest__label">С каким приложением путешествовали?</legend>
+            <label class="contest__label contest__label--for-radio">
               <input class="contest__input contest__input--type--chekbox-dot contest__input--checked" type="checkbox">
               Ping для iOS
             </label>
-            <label class="contest__label contest__label--for-radio" for="">
+            <label class="contest__label contest__label--for-radio">
               <input class="contest__input contest__input--type--chekbox-dot" type="checkbox">
               Ping для Android
             </label>
-            <label class="contest__label contest__label--for-radio" for="">
+            <label class="contest__label contest__label--for-radio">
               <input class="contest__input contest__input--type--chekbox-dot" type="checkbox">
               Ping для Windows Phone
             </label>
-          </div>
+          </fieldset>
           <div class="contest__emotions">
             <p class="contest_label">Опишите свои эмоции</p>
             <textarea name="" id="" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
