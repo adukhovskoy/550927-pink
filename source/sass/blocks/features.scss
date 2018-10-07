@@ -1,0 +1,32 @@
+.features {
+  font-family: 'OpenSans';
+  color: $blue;
+  background-color: $white;
+}
+
+.features__header {
+  @include reset-marging;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.features__list {
+  @include reset-list;
+}
+
+.features__name {
+  @include reset-marging;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+}
+
+.features__description {
+  @include reset-marging;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $blue;
+}
+

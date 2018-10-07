@@ -1,0 +1,24 @@
+.photo-upload {
+  font-family: 'OpenSans';
+  background-color: $white;
+}
+
+.photo-upload__header {
+  @include reset-marging;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $blue;
+}
+
+.photo-upload__button {
+  @include reset-marging;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  color: $red;
+}
+
+.photo-upload__button--disabled {
+  color: transparentize($blue, 0.9);
+}

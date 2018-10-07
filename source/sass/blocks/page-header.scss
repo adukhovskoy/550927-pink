@@ -1,0 +1,17 @@
+.page-header {
+  font-family: 'OpenSans';
+  font-size: 18px;
+  font-weight: bold;
+  color: $white;
+  background-color: $grayblue;
+}
+
+.page-header__logo {
+  @include reset-link;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 28px;
+}
+
+
