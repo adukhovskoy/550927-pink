@@ -1,11 +1,11 @@
 .contest {
-  font-family: 'OpenSans';
+  font-family: $OpenSans;
   line-height: 30px;
   background-color: $white;
 }
 
 .contest__header {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 24px;
   font-weight: lighter;
   color: $white;
@@ -13,14 +13,14 @@
 }
 
 .contest__desc {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 14px;
   font-weight: normal;
   color: $blue;
 }
 
 .contest__label {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
@@ -42,7 +42,7 @@
 }
 
 .contest__submit-button {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 18px;
   font-weight: bold;
   border: none;
@@ -52,7 +52,7 @@
 }
 
 .contest__note {
-  font-weight: 14px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;

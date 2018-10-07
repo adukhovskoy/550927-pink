@@ -1,5 +1,5 @@
 .reviews {
-  font-family: 'OpenSans';
+  font-family: $OpenSans;
   background-color: $white;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .reviews__author {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -16,7 +16,7 @@
 }
 
 .reviews__text {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;

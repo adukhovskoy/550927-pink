@@ -1,5 +1,5 @@
 .tariff {
-  font-family: 'OpenSans';
+  font-family: $OpenSans;
   background-color: $white;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .tariff__value--price {
-  font-weight: 24px;
+  font-size: 24px;
   font-weight: lighter;
   color: $white;
   background-color: $blue;

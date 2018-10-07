@@ -1,11 +1,11 @@
 .gallery {
-  font-family: 'OpenSans';
+  font-family: $OpenSans;
   line-height: 30px;
   background-color: $white;
 }
 
 .gallery__header {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 24px;
   font-weight: lighter;
   color: $white;
@@ -17,7 +17,7 @@
 }
 
 .gallery__desc {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
@@ -25,7 +25,7 @@
 }
 
 .gallery__username {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -33,7 +33,7 @@
 }
 
 .gallery__user-last-activity {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 12px;
   line-height: 24px;
   font-weight: lighter;
@@ -41,7 +41,7 @@
 }
 
 .gallery__user-text {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 12px;
   line-height: 24px;
   font-weight: normal;
@@ -49,9 +49,9 @@
 }
 
 .gallery_likes {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 12px;
   line-height: 24px;
   font-weight: normal;
-  color : $red;
+  color: $red;
 }

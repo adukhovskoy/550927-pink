@@ -1,10 +1,10 @@
 .photo-upload {
-  font-family: 'OpenSans';
+  font-family: $OpenSans;
   background-color: $white;
 }
 
 .photo-upload__header {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
@@ -12,7 +12,7 @@
 }
 
 .photo-upload__button {
-  @include reset-marging;
+  @include reset-margin;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;

@@ -1,6 +1,6 @@
 .contacts {
-  @include reset-marging;
-  font-family: 'OpenSans';
+  @include reset-margin;
+  font-family: $OpenSans;
   background-color: $white;
 }
 
