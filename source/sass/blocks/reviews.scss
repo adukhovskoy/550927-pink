@@ -1,0 +1,24 @@
+.reviews {
+  font-family: $OpenSans;
+  background-color: $white;
+}
+
+.reviews__list {
+  @include reset-list;
+}
+
+.reviews__author {
+  @include reset-margin;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $black;
+}
+
+.reviews__text {
+  @include reset-margin;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $blue;
+}

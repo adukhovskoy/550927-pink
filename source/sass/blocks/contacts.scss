@@ -1,0 +1,31 @@
+.contacts {
+  @include reset-margin;
+  font-family: $OpenSans;
+  background-color: $white;
+}
+
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__header {
+  margin: inherit;
+  padding: inherit;
+  font-size: 24px;
+  font-weight: lighter;
+  color: $blue;
+}
+
+.contacts__type {
+  margin: inherit;
+  padding: inherit;
+  font-size: 18px;
+  color: $blue;
+}
+
+.contacts__value {
+  margin: inherit;
+  padding: inherit;
+  font-size: 24px;
+  color: $red;
+}

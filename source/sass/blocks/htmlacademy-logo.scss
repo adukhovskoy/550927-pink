@@ -1,0 +1,9 @@
+.htmlacademy-logo__text {
+  @include reset-margin;
+  font-family: $OpenSans;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $blue;
+  background-color: $white;
+}
