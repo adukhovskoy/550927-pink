@@ -1,17 +1,44 @@
 .features {
-  font-family: $OpenSans;
-  color: $blue;
-  background-color: $white;
+  min-height: 1002px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $main-font;
+  color: $text-dark;
+  background-color: $bk-light;
 }
 
 .features__header {
   @include reset-margin;
+  text-align: center;
   font-size: 24px;
   font-weight: lighter;
 }
 
 .features__list {
   @include reset-list;
+  display: flex;
+
+  @media (min-width: $small-width) {
+    padding-left: 50%;
+  }
+
+  @media (min-width: $larger-width) {
+    flex-direction: row;
+    padding-left: 0;
+  }
+}
+
+.features__item:nth-child(1) {
+  @media (min-width: $larger-width) {
+    background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+  }
+}
+
+.features__item--24h {
+  @media (max-width: $larger-width) {
+    @include visually-hidden;
+  }
 }
 
 .features__name {
@@ -19,7 +46,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  color: $black;
+  color: $text-darkest;
 }
 
 .features__description {
@@ -27,5 +54,5 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
-  color: $blue;
+  color: $text-dark;
 }

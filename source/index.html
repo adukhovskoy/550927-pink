@@ -4,15 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
-  <link href="css/normalise.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="">Pink
+    <a class="page-header__logo pink-logo" href="">
+      <img src="http://placehold.it/75x22.png)" width="75" height="22" alt="Логотип Пинк">
     </a>
-    <nav class="page-header__nav main-nav">
+    <nav class="page-header__nav main-nav visually-hidden">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
@@ -20,38 +22,41 @@
         <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html
             Academy</a></li>
       </ul>
-      <button class="page-header__menu-botton button" type="button"></button>
+      <button class="main-nav__button button" type="button"></button>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Пинк - сайт для раскраски серых будней</h1>
-    <section class="intro">
-      <h2 class="visually-hidden">Интро, где взять мобильное приложение</h2>
-      <div class="intro__get-app get-app">
-        <h3 class="visually-hidden">Установка приложения</h3>
-        <p class="get-app__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        <ul class="get-app__links-list">
-          <li class="get-app__links-item get-app__link-item--appstore">
-            <a href="https://www.apple.com/ru/ios/app-store/">
-              <span class="visually-hidden">Ссылка на Apple Store</span>
-            </a>
-          </li>
-          <li class="get-app__links-item get-app__link-item--googleplay">
-            <a href="https://play.google.com/store/apps">
-              <span class="visually-hidden">Ссылка на Google Play</span>
-            </a>
-          </li>
-          <li class="get-app__links-item get-app__link-item--windowstore">
-            <a href="https://www.microsoft.com/en-us/store/appsvnext/windows-phone">
-              <span class="visually-hidden">Ссылка на Windows Store</span>
-            </a>
-          </li>
-        </ul>
-        <a class="button get-app__link" href="download.html">Скачать приложение</a>
+    <section class="page-main__intro intro">
+      <div class="intro__container">
+        <h2 class="intro__header">Взгляните на жизнь иначе!</h2>
+        <div class="intro__get-app get-app">
+          <h3 class="visually-hidden">Установка приложения</h3>
+          <p class="get-app__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <ul class="get-app__links-list">
+            <li class="get-app__links-item get-app__link-item--appstore">
+              <a href="https://www.apple.com/ru/ios/app-store/">
+                <span class="visually-hidden">Ссылка на Apple Store</span>
+              </a>
+            </li>
+            <li class="get-app__links-item get-app__link-item--googleplay">
+              <a href="https://play.google.com/store/apps">
+                <span class="visually-hidden">Ссылка на Google Play</span>
+              </a>
+            </li>
+            <li class="get-app__links-item get-app__link-item--windowstore">
+              <a href="https://www.microsoft.com/en-us/store/appsvnext/windows-phone">
+                <span class="visually-hidden">Ссылка на Windows Store</span>
+              </a>
+            </li>
+          </ul>
+          <a class="button get-app__link" href="download.html">Скачать приложение</a>
+        </div>
       </div>
     </section>
-    <section class="features">
-      <h2 class="features__header">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+    <section class="page-main__features features">
+      <h2 class="features__header">Устали от серости мегаполиса?<br class="features__header">Нам есть, что вам
+        предложить!</h2>
       <ul class="features__list">
         <li class="features__item">
           <h3 class="features__name">Поднимает настроение</h3>
@@ -69,9 +74,14 @@
             новых</p>
         </li>
       </ul>
-      <img class="features__example" src="img/hi-all.png" width="157" height="320" alt="Фото мобильного с текстом Всем привет!">
+      <div class="features__item features__item--24h">
+        <h3 class="features__name">Эффект на 24 часа!</h3>
+        <p class="features__description">Британские ученые провели исследования и доказали,
+          что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="features__link" href="24h.html">Узнать больше об исследовании</a>
+      </div>
     </section>
-    <section class="reviews">
+    <section class=" page-main__reviews reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
@@ -91,79 +101,42 @@
         </li>
       </ul>
     </section>
-    <section class="prices">
+    <section class="page-main__prices prices">
       <h2 class="visually-hidden">Цены</h2>
-      <ul class="prices__list">
-        <li class="prices__item">
-          <table class="tariff tariff--hit">
-            <tr>
-              <td class="tariff__field visually-hidden">Название тарифа</td>
-              <td class="tariff__value tariff__value--name">Стандартный</td>
-            </tr>
-            <tr>
-              <td class="tariff__field visually-hidden">Стоимость</td>
-              <td class="tariff__value tariff__value--price">3,99 USD</td>
-            </tr>
-            <tr>
-              <td class="tariff__field">Розовый фильтр</td>
-              <td class="tariff__value tariff__value--yes "><span class="visually-hidden">Да</span></td>
-            </tr>
-            <tr>
-              <td class="tariff__field">Смайлики</td>
-              <td class="tariff__value tariff__value--yes"><span class="visually-hidden">Да</span></td>
-            </tr>
-            <tr>
-              <td class="tariff__field">Комментарии</td>
-              <td class="tariff__value tariff__value--no"><span class="visually-hidden">Нет</span></td>
-            </tr>
-          </table>
-        </li>
-        <li class="prices__item">
-          <table class="tariff tariff--hit">
-            <tr>
-              <td class="tariff__field visually-hidden">Название тарифа visually-hidden</td>
-              <td class="tariff__value tariff__value--name">База</td>
-            </tr>
-            <tr>
-              <td class="tariff__field visually-hidden">Стоимость visually-hidden</td>
-              <td class="tariff__value tariff__value--price">1,99 USD</td>
-            </tr>
-            <tr>
-              <td class="tariff__field">Розовый фильтр</td>
-              <td class="tariff__value tariff__value--yes"><span class="visually-hidden">Да</sp</an>td> </tr> <tr>
-              <td class="tariff__field">Смайлики</td>
-              <td class="tariff__value tariff__value--no"><span class="visually-hidden">Да</sp</an>td> </tr> <tr>
-              <td class="tariff__field">Комментарии</td>
-              <td class="tariff__value tariff__value--no"><span class="visually-hidden">Нет</sp</an>td> </tr> </table>
-                    </li> <li class="prices__item">
-                  <table class="tariff tariff--hit">
-                    <tr>
-                      <td class="tariff__field visually-hidden">Название тарифа</td>
-                      <td class="tariff__value tariff__value--name">Анлим</td>
-                    </tr>
-                    <tr>
-                      <td class="tariff__field visually-hidden">Стоимость</td>
-                      <td class="tariff__value tariff__value--price">9,99 USD</td>
-                    </tr>
-                    <tr>
-                      <td class="tariff__field">Розовый фильтр</td>
-                      <td class="tariff__value tariff__value--yes"><span class="visually-hidden">Да</span></td>
-                    </tr>
-                    <tr>
-                      <td class="tariff__field">Смайлики</td>
-                      <td class="tariff__value tariff__value--yes"><span class="visually-hidden">Да</span></td>
-                    </tr>
-                    <tr>
-                      <td class="tariff__field">Комментарии</td>
-                      <td class="tariff__value tariff__value-yes"><span class="visually-hidden">Нет</span></td>
-                    </tr>
-                  </table>
-        </li>
-      </ul>
+      <table class="prices__table">
+        <tr class="prices__row prices__row--header">
+          <td class="prices__cell prices__name"><span class="visually-hidden">Имя тарифа</span></td>
+          <td class="prices__cell prices__namevalue">База</td>
+          <td class="prices__cell prices__namevalue">Стандарт</td>
+          <td class="prices__cell prices__namevalue">Анлим</td>
+        </tr>
+        <tr class="prices__row prices__row--header">
+          <td class="prices__cell prices__pricename"><span class="visually-hidden">Цена</span></td>
+          <td class="prices__cell prices__pricevalue">1.99 USD</td>
+          <td class="prices__cell prices__pricevalue">3,99 USD</td>
+          <td class="prices__cell prices__pricevalue">9,99 USD</td>
+        </tr>
+        <tr class="prices__row">
+          <td class="prices__cell prices__featurename">Розовый фильтр</td>
+          <td class="prices__cell prices__featurevalue">да</td>
+          <td class="prices__cell prices__featurevalue">да</td>
+          <td class="prices__cell prices__featurevalue">да</td>
+        </tr>
+        <tr class="prices__row">
+          <td class="prices__cell prices__featurename">Смайлики</td>
+          <td class="prices__cell prices__featurevalue">нет</td>
+          <td class="prices__cell prices__featurevalue">да</td>
+          <td class="prices__cell prices__featurevalue">да</td>
+        </tr>
+        <tr class="prices__row">
+          <td class="prices__cell prices__featurename">Комментарии</td>
+          <td class="prices__cell prices__featurevalue">нет</td>
+          <td class="prices__cell prices__featurevalue">нет</td>
+          <td class="prices__cell prices__featurevalue">да</td>
+        </tr>
+      </table>
     </section>
-  </main>
-  <footer class="page-footer">
-    <section class="contacts">
+    <section class="page-main__contacts contacts">
       <h2 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h2>
       <ul class="contacts__list">
         <li class="contacts__item">
@@ -181,6 +154,34 @@
       </ul>
     </section>
     <section class="map"></section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__logo pink-logo">
+      <img class="pink-logo__img" src="img/pink-logo-glasses.svg" alt="Лого сайта пинк">
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item social__item--twitter">
+          <a class="social__link" href="twitter"><img src="img/twitter.svg" alt="Мы в twitter">
+            <span class="visually-hidden">Мы в twitter</span>
+          </a>
+        </li>
+        <li class="social__item social__item--facebook">
+          <a class="social__link" href="facebook"><img src="img/facebook.svg" alt="Мы в facebook">
+            <span class="visually-hidden">Мы в facebook</span>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a class="social__link" href="youtube"><img src="img/youtube.svg" alt="Мы в youtube">
+            <span class="visually-hidden">Мы в youtube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__logo htmlacademy-logo">
+      <p class="htmlacademy-logo__text">Разработано<span class="visually-hidden"> в HTML Academy</span></p>
+      <img class="htmlacademy-logo__img" src="img/htmlacademy.svg" width="27" height="34" alt="Лого htmlacademy">
+    </div>
   </footer>
 </body>
 

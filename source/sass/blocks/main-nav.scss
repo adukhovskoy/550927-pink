@@ -1,7 +1,38 @@
+.main-nav {
+  position: relative;
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-light;
+}
+
 .main-nav__list {
   @include reset-list;
+
+  @media (min-width: $largest-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $largest-width) {
+    height: 64px;
+  }
 }
 
 .main-nav__link {
-  @include reset-link;
+  color: inherit;
+}
+
+.main-nav__button {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -1,7 +1,7 @@
 .contacts {
   @include reset-margin;
-  font-family: $OpenSans;
-  background-color: $white;
+  font-family: $main-font;
+  background-color: $text-light;
 }
 
 .contacts__list {
@@ -13,19 +13,19 @@
   padding: inherit;
   font-size: 24px;
   font-weight: lighter;
-  color: $blue;
+  color: $text-dark;
 }
 
 .contacts__type {
   margin: inherit;
   padding: inherit;
   font-size: 18px;
-  color: $blue;
+  color: $text-dark;
 }
 
 .contacts__value {
   margin: inherit;
   padding: inherit;
   font-size: 24px;
-  color: $red;
+  color: $accent-primary;
 }

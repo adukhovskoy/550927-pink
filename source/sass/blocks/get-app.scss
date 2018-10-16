@@ -1,7 +1,7 @@
 .get-app {
-  font-family: $OpenSans;
-  color: $white;
-  background-color: $grayblue;
+  font-family: $main-font;
+  color: $text-light;
+  background-color: $bk-darkest;
 }
 
 .get-app__info {
@@ -16,9 +16,8 @@
 }
 
 .get-app__link {
-  @include reset-link;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
-  color: $white;
+  color: $text-light;
 }

@@ -1,0 +1,38 @@
+.page-main__intro {
+  margin-top: -70px;
+  padding-top: 466px;
+  background-image:
+    url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-position:
+    top 180px left,
+    top center;
+  background-repeat: no-repeat;
+  background-color: $bk-darkest;
+
+  @media (min-width: $small-width) {
+    background-image:
+      url("../../img/iphone-hand-mobile@1x.png"),
+      url("../../img/bg-back-tablet@1x.jpg");
+    background-position:
+      top 180px left,
+      top center;
+  }
+
+  @media (min-width: $larger-width) {
+    padding-top: 102px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 110px;
+    background-image:
+      url("../../img/iphone-hand-tablet@1x.png"),
+      url("../../img/bg-back-tablet@1x.jpg");
+    background-position:
+      top 190px left,
+      center;
+  }
+
+  @media (min-width: $larger-width) {
+    margin-top: -110px;
+  }
+}
