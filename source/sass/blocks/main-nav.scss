@@ -14,16 +14,33 @@
   @media (min-width: $largest-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .main-nav__item {
+  padding: 15px;
+  padding-top: 17px;
   display: flex;
   justify-content: center;
-  align-items: center;
 
-  @media (max-width: $largest-width) {
-    height: 64px;
+  @media (min-width: $larger-width) {
+    padding: 16px;
+  }
+
+  @media (min-width: $largest-width) {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    padding-left: 42px;
+    padding-right: 42px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  &:last-child {
+    padding-right: 10px;
   }
 }
 
@@ -33,6 +50,8 @@
 
 .main-nav__button {
   position: absolute;
-  top: 0;
-  left: 0;
+
+  @media (min-width: $largest-width) {
+    @include visually-hidden;
+  }
 }
