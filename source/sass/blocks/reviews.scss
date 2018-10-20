@@ -1,6 +1,6 @@
 .reviews {
-  font-family: $OpenSans;
-  background-color: $white;
+  font-family: $main-font;
+  background-color: $text-light;
 }
 
 .reviews__list {
@@ -12,7 +12,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  color: $black;
+  color: $text-darkest;
 }
 
 .reviews__text {
@@ -20,5 +20,5 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-  color: $blue;
+  color: $text-dark;
 }

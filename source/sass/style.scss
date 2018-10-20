@@ -1,43 +1,20 @@
+@charset 'utf-8';
 
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff2") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff2") format("woff");
-  font-weight: lighter;
-  font-style: normal;
-}
+//temp
+@import "outlines.scss";
 
 //common styles
-@import "blocks/helpers.scss";
-@import "mixins.scss";
-@import "blocks/page-header.scss";
-
-// main page blocks
-@import "blocks/main-nav.scss";
-@import "blocks/get-app.scss";
-@import "blocks/features.scss";
-@import "blocks/reviews.scss";
-@import "blocks/tariff.scss";
-@import "blocks/contacts.scss";
-
-// form page blocks
-@import "blocks/contest.scss";
-@import "blocks/htmlacademy-logo.scss";
-
-
-//photo page blocks
-@import "blocks/gallery.scss";
-@import "blocks/photo-upload.scss";
+@import "base/base";
+@import "themes/default-theme";
+@import "utilities/mixins";
+@import "utilities/helpers";
+@import "blocks/page-header";
+@import "blocks/page-footer";
+@import "blocks/main-nav";
+@import "blocks/pink-logo";
+@import "blocks/intro";
+@import "blocks/get-app";
+@import "blocks/features";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/social";
