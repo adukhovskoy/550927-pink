@@ -1,7 +1,8 @@
 .intro {
   margin-top: -70px;
-  padding-top: 466px;
-  display: flex;
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: $text-light;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: top center;
@@ -9,12 +10,7 @@
   background-color: $bk-darkest;
 
   @media (min-width: $larger-width) {
-    padding-top: 110px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 110px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-position: center;
   }
 
   @media (min-width: $larger-width) {
@@ -23,5 +19,17 @@
 }
 
 .intro__container {
-  width: auto;
+  margin: 0 auto;
+  width: 280px;
+  min-height: 171px;
+}
+
+.intro__header {
+  @include reset-margin;
+  text-align: center;
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+  text-transform: none;
 }
