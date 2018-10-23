@@ -1,8 +1,4 @@
 .features {
-  min-height: 1002px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: $main-font;
   color: $text-dark;
   background-color: $bk-light;
@@ -17,28 +13,16 @@
 
 .features__list {
   @include reset-list;
+  margin: 0 auto;
   display: flex;
-
-  @media (min-width: $small-width) {
-    padding-left: 50%;
-  }
-
-  @media (min-width: $larger-width) {
-    flex-direction: row;
-    padding-left: 0;
-  }
+  flex-direction: column;
 }
 
-.features__item:nth-child(1) {
-  @media (min-width: $larger-width) {
-    background-image: url("../../img/iphone-screen-1-desktop@1x.png");
-  }
-}
-
-.features__item--24h {
+.features__item--research {
   @media (max-width: $larger-width) {
     @include visually-hidden;
   }
+
 }
 
 .features__name {

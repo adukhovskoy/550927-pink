@@ -46,6 +46,21 @@
 
 .main-nav__link {
   color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $accent-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $largest-width) {
+    &:active {
+      color: inherit;
+    }
+  }
 }
 
 .main-nav__button {

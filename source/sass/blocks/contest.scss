@@ -1,22 +1,23 @@
 .contest {
-  font-family: $OpenSans;
+  font-family: $main-font;
   line-height: 30px;
-  background-color: $white;
+  background-color: $bk-light;
 }
 
 .contest__header {
   @include reset-margin;
-  font-size: 24px;
-  font-weight: lighter;
-  color: $white;
-  background: $grayblue;
-}
-
-.contest__desc {
-  @include reset-margin;
   font-size: 14px;
   font-weight: normal;
-  color: $blue;
+  color: $text-dark;
+}
+
+.contest__fieldset {
+  display: flex;
+  border: none;
+}
+
+.contest__fieldset--archivements {
+  background-color: $bk-dark;
 }
 
 .contest__label {
@@ -24,21 +25,25 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
-  color: $red;
+  color: $accent-primary;
+}
+
+.contest__input {
+  @include reset-margin;
 }
 
 .contest__label--checkbox {
   font-size: 18px;
   font-weight: normal;
   text-transform: initial;
-  color: $blue;
+  color: $text-dark;
 }
 
 .contest__label--radio {
   font-size: 18px;
   font-weight: normal;
   text-transform: initial;
-  color: $blue;
+  color: $text-dark;
 }
 
 .contest__submit-button {
@@ -47,8 +52,8 @@
   font-weight: bold;
   border: none;
   text-transform: uppercase;
-  color: $white;
-  background-color: $green;
+  color: $text-light;
+  background-color: $accent-secondary;
 }
 
 .contest__note {
@@ -56,12 +61,12 @@
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
-  color: $blue;
+  color: $text-dark;
 }
 
 .contest__input--type--textarea {
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
-  color: $blue;
+  color: $text-dark;
 }

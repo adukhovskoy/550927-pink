@@ -1,9 +1,20 @@
+.htmlacademy-logo {
+  display: flex;
+  align-items: center;
+}
+
 .htmlacademy-logo__text {
   @include reset-margin;
-  font-family: $OpenSans;
+  font-family: $main-font;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
-  color: $blue;
-  background-color: $white;
+  color: $text-dark;
+  background-color: $bk-light;
+}
+
+.htmlacademy-logo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
