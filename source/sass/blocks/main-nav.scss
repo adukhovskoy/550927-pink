@@ -6,6 +6,10 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $text-light;
+
+  @media (min-width: $largest-width) {
+    display: flex;
+  }
 }
 
 .main-nav__list {
@@ -13,39 +17,46 @@
 
   @media (min-width: $largest-width) {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .main-nav__item {
-  padding: 15px;
-  padding-top: 17px;
+  min-height: 64px;
+  padding: 8px;
   display: flex;
-  justify-content: center;
-
-  @media (min-width: $larger-width) {
-    padding: 16px;
-  }
 
   @media (min-width: $largest-width) {
-    padding-top: 46px;
-    padding-bottom: 46px;
-    padding-left: 42px;
-    padding-right: 42px;
-    line-height: 18px;
+    min-height: 55px;
+    margin-left: 68px;
     font-weight: normal;
     text-transform: none;
   }
 
   &:last-child {
-    padding-right: 10px;
+    padding-right: 0px;
   }
 }
 
 .main-nav__link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: inherit;
+
+  @media (min-width: $largest-width) {
+    border-bottom: 2px solid transparent;
+  }
+
+  &--active {
+    @media (min-width: $largest-width) {
+      border-bottom: 2px solid $bk-light;
+    }
+  }
 
   &:hover,
   &:focus {
@@ -54,19 +65,104 @@
 
   &:active {
     opacity: 0.3;
-  }
 
-  @media (min-width: $largest-width) {
-    &:active {
+    @media (min-width: $largest-width) {
       color: inherit;
     }
   }
 }
 
-.main-nav__button {
+.main-nav__toggler {
   position: absolute;
+  top: -68px;
+  right: 0;
+  height: 66px;
+
+  border: none;
+  background-color: inherit;
+
+  @media (min-width: $larger-width) {
+    height: 110px;
+    top: -110px;
+  }
 
   @media (min-width: $largest-width) {
     @include visually-hidden;
+  }
+}
+
+.main-nav__toggler--to-close {
+  width: 64px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 20px;
+    display: block;
+    width: 21px;
+    height: 4px;
+    background-color: $bk-light;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $accent-primary;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $larger-width) {
+    &::before,
+    &::after {
+      top: 50px;
+    }
+  }
+}
+
+.main-nav__toggler--to-open {
+  width: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    width: 51px;
+    height: 4px;
+    background-color: $bk-light;
+    box-shadow: 0 10px 0 0 $bk-light, 0 20px 0 0 $bk-light;
+  }
+
+  &:hover::before
+  &:focus::before {
+    background-color: $accent-primary;
+    box-shadow: 0 10px 0 0 $accent-primary, 0 20px 0 0 $accent-primary;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $larger-width) {
+    &::before,
+    &::after {
+      top: 40px;
+    }
   }
 }

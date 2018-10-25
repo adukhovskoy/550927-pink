@@ -11,46 +11,51 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo pink-logo" href="">
-      <img src="http://placehold.it/75x22.png)" width="75" height="22" alt="Логотип Пинк">
-    </a>
-    <nav class="page-header__nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
-            Academy</a></li>
-      </ul>
-      <button class="main-nav__button button" type="button"></button>
-    </nav>
+    <div class="page-header__container">
+      <a class="page-header__logo pink-logo" href="">
+        <img src="http://placehold.it/75x22.png)" width="75" height="22" alt="Логотип Пинк">
+      </a>
+      <nav class="page-header__nav main-nav main-nav--opened">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
+              Academy</a></li>
+        </ul>
+        <button class="main-nav__toggler main-nav__toggler--to-close" type="button"></button>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Пинк - сайт для раскраски серых будней</h1>
-    <section class="page-main__intro intro intro--mainpage">
-      <div class="intro__container">
-        <h2 class="intro__header">Взгляните на жизнь иначе!</h2>
+    <section class="page-main__intro intro">
+      <div class="intro__container intro__container--main-page center-container">
+        <h2 class="intro__header intro__header--main-page">Взгляните на жизнь иначе!</h2>
         <div class="intro__get-app get-app">
           <h3 class="visually-hidden">Установка приложения</h3>
           <p class="get-app__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           <ul class="get-app__links-list">
-            <li class="get-app__links-item get-app__link-item--appstore">
+            <li class="get-app__links-item">
               <a href="https://www.apple.com/ru/ios/app-store/">
+                <img src="img/logo-apple.svg" alt="">
                 <span class="visually-hidden">Ссылка на Apple Store</span>
               </a>
             </li>
-            <li class="get-app__links-item get-app__link-item--googleplay">
+            <li class="get-app__links-item">
               <a href="https://play.google.com/store/apps">
+                <img src="img/logo-android.svg" alt="">
                 <span class="visually-hidden">Ссылка на Google Play</span>
               </a>
             </li>
-            <li class="get-app__links-item get-app__link-item--windowstore">
+            <li class="get-app__links-item">
               <a href="https://www.microsoft.com/en-us/store/appsvnext/windows-phone">
+                <img src="img/logo-microsoft.svg" alt="">
                 <span class="visually-hidden">Ссылка на Windows Store</span>
               </a>
             </li>
           </ul>
-          <a class="button get-app__link" href="download.html">Скачать приложение</a>
+          <a class="button get-app__button" href="download.html">Скачать приложение</a>
         </div>
       </div>
     </section>
