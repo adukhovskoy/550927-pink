@@ -24,6 +24,12 @@
   }
 }
 
+.main-nav__list--closed {
+  @media (max-width: $largest-width) {
+    display: none;
+  }
+}
+
 .main-nav__item {
   min-height: 64px;
   padding: 8px;
@@ -91,7 +97,7 @@
   }
 }
 
-.main-nav__toggler--to-close {
+.main-nav__toggler--close {
   width: 64px;
 
   &::before,
@@ -134,7 +140,7 @@
   }
 }
 
-.main-nav__toggler--to-open {
+.main-nav__toggler--open {
   width: 90px;
 
   &::before {
@@ -165,4 +171,8 @@
       top: 40px;
     }
   }
+}
+
+.main-nav__toggler--nojs {
+  @include visually-hidden;
 }
