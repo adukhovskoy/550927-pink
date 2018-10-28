@@ -155,7 +155,7 @@
     box-shadow: 0 10px 0 0 $bk-light, 0 20px 0 0 $bk-light;
   }
 
-  &:hover::before
+  &:hover::before,
   &:focus::before {
     background-color: $accent-primary;
     box-shadow: 0 10px 0 0 $accent-primary, 0 20px 0 0 $accent-primary;

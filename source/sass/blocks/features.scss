@@ -1,4 +1,5 @@
 .features {
+  padding-top: 15px;
   font-family: $main-font;
   color: $text-dark;
   background-color: $bk-light;
@@ -6,41 +7,240 @@
 
 .features__header {
   @include reset-margin;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   font-size: 24px;
+  line-height: 30px;
   font-weight: lighter;
+
+  @media (min-width: $larger-width) {
+    padding-top: 35px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $largest-width) {
+    padding-top: 55px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.features__header--last {
+  @media (min-width: $larger-width) {
+    width: 500px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $largest-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .features__list {
   @include reset-list;
+  position: relative;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  padding-top: 110px;
   background-color: $bk-dark;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (min-width: $larger-width) {
+    padding-top: 115px;
+    padding-bottom: 40px;
+    padding-left: 330px;
+    background-image:
+      url("../../img/iphone-screen-3-tablet@1x.png"),
+      url("../../img/bg-triangle-white.svg");
+    background-position:
+      bottom left 20px,
+      top left;
+    background-size:
+      268px 483px,
+      auto;
+  }
+
+  @media (min-width: $largest-width) {
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-position: top left;
+    background-size: contain;
+  }
+}
+
+.features__list-wrapper {
+  margin: 0 auto;
+  max-width: 320px;
+
+  @media (min-width: $larger-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: $largest-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.features__item {
+  margin-bottom: 31px;
+
+  @media (min-width: $larger-width) {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (min-width: $largest-width) {
+    width: 300px;
+    padding-top: 360px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &:nth-child(1) {
+      background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+    }
+  }
+
+  &:last-child {
+    @media (max-width: $larger-width) {
+      margin-bottom: 0;
+      padding-bottom: 318px;
+      background-image: url("../../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: bottom -40px center;
+      }
+    }
 }
 
 .features__item--research {
+  padding-left: 380px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  @media (min-width: $largest-width) {
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 120px;
+    width: 960px;
+  }
+
   @media (max-width: $larger-width) {
     @include visually-hidden;
   }
+}
 
+.features__link {
+  @include reset-margin;
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: $accent-primary;
+  text-decoration: underline;
+
+  @media (min-width: $largest-width) {
+    font-size: 18px;
+    font-weight: normal;
+  }
 }
 
 .features__name {
   @include reset-margin;
+  margin: 0 auto;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   font-weight: bold;
   color: $text-darkest;
+
+  @media (min-width: $larger-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $largest-width) {
+    width: 240px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.features__name--research {
+  width: 170px;
+  font-size: 30px;
+  line-height: 35px;
+
+  @media (min-width: $larger-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $largest-width) {
+    margin-left: 0;
+    width: 300px;
+    text-align: left;
+  }
 }
 
 .features__description {
   @include reset-margin;
+  margin: 0 auto;
+  width: 260px;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   font-weight: normal;
   color: $text-dark;
+
+  @media (min-width: $larger-width) {
+    width: 300px;
+    margin-left: 0;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  @media (min-width: $largest-width) {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.features__description--research {
+  @media (min-width: $larger-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $largest-width) {
+    margin-left: 0;
+    margin-bottom: 35px;
+    width: 500px;
+    text-align: left;
+  }
 }
