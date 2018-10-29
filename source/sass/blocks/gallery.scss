@@ -6,6 +6,10 @@
 
 .gallery__header {
   @include reset-margin;
+  padding-top: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
@@ -20,6 +24,28 @@
 .gallery__item {
   margin: 0 auto;
   width: 280px;
+}
+
+.gallery__item--hit {
+  width: auto;
+}
+
+.gallery__image {
+  display: block;
+}
+
+.gallery__text-wrapper {
+  margin: 0 auto;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $bk-dark;
+
+  @media (min-width: $largest-width) {
+    max-width: 960px;
+  }
 }
 
 .gallery__username {
@@ -40,7 +66,8 @@
 
 .gallery__user-text {
   @include reset-margin;
-  font-size: 12px;
+  width: 230px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: normal;
   color: $text-dark;
