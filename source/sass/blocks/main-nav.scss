@@ -3,7 +3,7 @@
   font-family: $main-font;
   font-size: 18px;
   line-height: 32px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: $text-light;
 
@@ -37,8 +37,8 @@
 
   @media (min-width: $largest-width) {
     min-height: 55px;
-    margin-left: 68px;
-    font-weight: normal;
+    margin-left: 64px;
+    font-weight: 400;
     text-transform: none;
   }
 

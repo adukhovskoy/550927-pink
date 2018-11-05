@@ -13,6 +13,10 @@
   }
 
   @media (min-width: $largest-width) {
+    width: 960px;
     height: 225px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
   }
 }

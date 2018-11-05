@@ -14,7 +14,7 @@
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-weight: lighter;
+  font-weight: 300;
 
   @media (min-width: $larger-width) {
     padding-top: 35px;
@@ -162,7 +162,7 @@
 
   @media (min-width: $largest-width) {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400;
   }
 }
 
@@ -173,7 +173,7 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   color: $text-darkest;
 
   @media (min-width: $larger-width) {
@@ -212,7 +212,7 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  font-weight: normal;
+  font-weight: 400;
   color: $text-dark;
 
   @media (min-width: $larger-width) {

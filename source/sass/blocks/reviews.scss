@@ -11,7 +11,7 @@
   @include reset-margin;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: $text-darkest;
 }
 
@@ -19,6 +19,6 @@
   @include reset-margin;
   font-size: 14px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 400;
   color: $text-dark;
 }
