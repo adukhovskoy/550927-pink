@@ -160,7 +160,7 @@
 }
 
 .contest__legend--emotions {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   @media (min-width: $larger-width) {
     margin-bottom: 20px;
@@ -195,7 +195,7 @@
     align-items: center;
 
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
@@ -234,7 +234,7 @@
   padding-left: 48px;
   margin-bottom: 35px;
 
-    &:last-child {
+  &:last-child {
     margin-bottom: 10px;
   }
 

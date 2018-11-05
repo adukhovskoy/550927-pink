@@ -33,7 +33,7 @@
   &--main-page {
     min-height: 667px;
     padding-top: 396px;
-    background-image: url(../../img/iphone-hand-mobile@1x.png);
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: right 137px top 110px;
 
@@ -41,7 +41,7 @@
       min-height: 620px;
       padding-top: 90px;
       padding-right: 340px;
-      background-image: url(../../img/iphone-hand-tablet@1x.png);
+      background-image: url("../../img/iphone-hand-tablet@1x.png");
       background-position: center bottom;
     }
 
@@ -49,7 +49,7 @@
       min-height: 743px;
       padding-top: 110px;
       padding-right: 650px;
-      background-image: url(../../img/iphone-hand-desktop@1x.png);
+      background-image: url("../../img/iphone-hand-desktop@1x.png");
       background-position: right -120px bottom;
     }
 
@@ -93,10 +93,10 @@
     line-height: 60px;
   }
 
-    @media (max-width: $larger-width) {
-      @include visually-hidden;
-    }
+  @media (max-width: $larger-width) {
+    @include visually-hidden;
   }
+}
 
 .intro__get-app {
   min-height: 271px;

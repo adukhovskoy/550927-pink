@@ -101,7 +101,7 @@
     margin-bottom: 35px;
 
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
@@ -131,8 +131,8 @@
       background-image: url("../../img/iphone-screen-mobile@1x.png");
       background-repeat: no-repeat;
       background-position: bottom -40px center;
-      }
     }
+  }
 }
 
 .features__item--research {
