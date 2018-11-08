@@ -53,7 +53,7 @@
       background-position: right -120px bottom;
     }
 
-    @media (max-width: $larger-width) {
+    @media (max-width: $larger-width - 1) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -77,6 +77,11 @@
     font-size: 50px;
     line-height: 60px;
   }
+
+  @media (min-width: $largest-width) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .intro__header--main-page {
@@ -93,8 +98,14 @@
     line-height: 60px;
   }
 
-  @media (max-width: $larger-width) {
+  @media (max-width: $larger-width - 1) {
     @include visually-hidden;
+  }
+}
+
+.intro__header--photo {
+  @media (min-width: $largest-width) {
+    width: 800px;
   }
 }
 

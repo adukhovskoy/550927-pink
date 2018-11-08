@@ -11,6 +11,11 @@
   font-weight: 400;
   color: $text-dark;
   background-color: $bk-light;
+
+  @media (min-width: $largest-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .htmlacademy-logo__link {

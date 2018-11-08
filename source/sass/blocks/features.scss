@@ -125,7 +125,7 @@
   }
 
   &:last-child {
-    @media (max-width: $larger-width) {
+    @media (max-width: $larger-width - 1) {
       margin-bottom: 0;
       padding-bottom: 318px;
       background-image: url("../../img/iphone-screen-mobile@1x.png");
@@ -147,7 +147,7 @@
     width: 960px;
   }
 
-  @media (max-width: $larger-width) {
+  @media (max-width: $larger-width - 1) {
     @include visually-hidden;
   }
 }

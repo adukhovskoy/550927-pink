@@ -30,7 +30,7 @@
   <main class="page-main">
     <section class="page-main__intro intro">
       <div class="intro__container">
-        <h2 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <h2 class="intro__header intro__header--photo">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
     </section>
     <section class="contest">
@@ -57,13 +57,15 @@
         <div class="contest__fieldsetwrapper contest__fieldsetwrapper--contacts">
           <fieldset class="contest__fieldset contest__fieldset--contacts">
             <legend class="contest__legend contest__accent contest__legend--contacts">Контактная информация</legend>
-            <div class="contest__fieldwrapper contest__fieldwrapper--contacts">
-              <label class="contest__label contest__accent" for="phone">Номер телефона</label>
-              <input class="contest__input contest__input--text" id="phone" type="text" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="contest__fieldwrapper contest__fieldwrapper--contacts">
-              <label class="contest__label contest__accent" for="email">Адрес почты</label>
-              <input class="contest__input contest__input--text" id="email" type="text" placeholder="Введите почту *">
+            <div class="contest__flexwrapper contest__flexwrapper--contacts">
+              <div class="contest__fieldwrapper contest__fieldwrapper--contacts">
+                <label class="contest__label contest__accent" for="phone">Номер телефона</label>
+                <input class="contest__input contest__input--text" id="phone" type="text" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="contest__fieldwrapper contest__fieldwrapper--contacts">
+                <label class="contest__label contest__accent" for="email">Адрес почты</label>
+                <input class="contest__input contest__input--text" id="email" type="text" placeholder="Введите почту *">
+              </div>
             </div>
           </fieldset>
         </div>
@@ -71,28 +73,28 @@
           <fieldset class="contest__fieldset contest__fieldset--archivements">
             <legend class="contest__legend contest__accent contest__legend--archivements">Ваши безбашенные достижения
               в путешествии</legend>
-            <div class="contest__flexwrapper--archivements">
-              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox">
+            <div class="contest__flexwrapper contest__flexwrapper--archivements">
+              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox contest__fieldwrapper--shark">
                 <input class="contest__input visually-hidden" id="shark-selfie" type="checkbox">
                 <label class="contest__label contest__label--archivements" for="shark-selfie">Сделал селфи с акулой</label>
               </div>
-              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox">
+              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox contest__fieldwrapper--beach">
                 <input class="contest__input visually-hidden" id="burnt-on-beach" type="checkbox">
                 <label class="contest__label contest__label--archivements" for="burnt-on-beach">Обгорел на пляже</label>
               </div>
-              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox">
+              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox contest__fieldwrapper--chuck">
                 <input class="contest__input visually-hidden" id="saw-chuck" type="checkbox">
                 <label class="contest__label contest__label--archivements" for="saw-chuck">Видел Чака Норриса</label>
               </div>
-              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox">
+              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox contest__fieldwrapper--soven">
                 <input class="contest__input visually-hidden" id="soveniers" type="checkbox">
                 <label class="contest__label contest__label--archivements" for="soveniers">Накупил сувениров</label>
               </div>
-              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox">
+              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox contest__fieldwrapper--tower">
                 <input class="contest__input visually-hidden" id="hold-tower" type="checkbox">
                 <label class="contest__label contest__label--archivements" for="hold-tower">Удержал башню</label>
               </div>
-              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox">
+              <div class="contest__fieldwrapper contest__fieldwrapper--checkbox contest__fieldwrapper--hotel">
                 <input class="contest__input visually-hidden" id="destroed-hotel" type="checkbox">
                 <label class="contest__label contest__label--archivements" for="destroed-hotel">Разгромил отель</label>
               </div>
@@ -124,7 +126,8 @@
         </div>
         <div class="contest__sendwrapper">
           <button class="contest__submit-button">Отправить форму</button>
-          <p class="contest__note">* — обязательные поля</p>
+          <p class="contest__note">* — обязательные <span class="contest__note contest__note-extender">для заполнения
+            </span>поля</p>
         </div>
       </form>
     </section>
