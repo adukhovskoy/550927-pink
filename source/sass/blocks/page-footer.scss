@@ -1,9 +1,22 @@
 .page-footer {
+  height: 284px;
+  padding: 40px 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
-  @media (max-width: $larger-width) {
-    @include visually-hidden;
+  @media (min-width: $larger-width) {
+    height: 128px;
+    padding: 36px 20px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $largest-width) {
+    width: 960px;
+    height: 194px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
   }
 }

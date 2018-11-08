@@ -1,23 +1,93 @@
 .get-app {
+  padding: 28px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   font-family: $main-font;
   color: $text-light;
   background-color: $bk-darkest;
+
+  @media (min-width: $larger-width) {
+    padding-top: 30px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $largest-width) {
+    padding-top: 50px;
+  }
 }
 
 .get-app__info {
   @include reset-margin;
+  width: 280px;
+  margin: 0 auto;
+  order: 2;
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
-  font-weight: lighter;
+  font-weight: 300;
+
+  @media (min-width: $larger-width) {
+    width: 300px;
+    font-size: 18px;
+  }
 }
 
 .get-app__links-list {
   @include reset-list;
+  margin-bottom: 20px;
+  order: 1;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $larger-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $largest-width) {
+    margin-bottom: 50px;
+  }
 }
 
-.get-app__link {
+.get-app__links-item {
+  width: 56px;
+  height: 56px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.get-app__button {
+  width: 280px;
+  min-height: 55px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  display: flex;
+  order: 0;
+  justify-content: center;
+  align-items: center;
+
   font-size: 18px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: $text-light;
+
+  border: 3px solid $bk-light;
+  border-radius: 24px;
+
+  @media (min-width: $larger-width) {
+    width: 300px;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $largest-width) {
+    margin-bottom: 70px;
+    font-size: 21px;
+  }
 }

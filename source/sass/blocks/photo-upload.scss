@@ -1,24 +1,194 @@
 .photo-upload {
-  font-family: $OpenSans;
-  background-color: $white;
+  font-family: $main-font;
+  background-color: $bk-light;
 }
 
 .photo-upload__header {
   @include reset-margin;
+  margin: 0 auto;
+  padding: 22px;
+  margin-bottom: 20px;
+  width: 320px;
   font-size: 14px;
   line-height: 30px;
-  font-weight: normal;
-  color: $blue;
+  font-weight: 400;
+  text-align: center;
+  color: $text-dark;
+
+  @media (min-width: $larger-width) {
+    font-size: 18px;
+    width: 660px;
+    padding: 21px;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: $largest-width) {
+    padding: 15px;
+    padding-bottom: 45px;
+  }
+}
+
+.photo-upload__form {
+  padding: 20px;
+  background-color: $bk-dark;
+
+  @media (min-width: $larger-width) {
+    height: 511px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $largest-width) {
+    width: 940px;
+    height: 514px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 70px;
+  }
+}
+
+.photo-upload__photo {
+  display: block;
+  margin: 0 auto;
+  background-color: $bk-dark;
+
+  @media (min-width: $larger-width) {
+    width: 300px;
+    padding-top: 17px;
+    margin-right: 45px;
+  }
+
+  @media (min-width: $largest-width) {
+    margin-right: 90px;
+  }
+}
+
+.photo-upload__list {
+  @include reset-list;
+  display: flex;
+  padding: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $larger-width) {
+    width: 275px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 65px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $larger-width) {
+    width: 410px;
+    padding-bottom: 145px;
+  }
+}
+
+.photo-upload__item {
+  width: 48px;
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $larger-width) {
+    width: 100%;
+    min-height: 73px;
+    margin: 0;
+    border-bottom: 1px solid transparentize($bk-darkest, 0.9);
+  }
 }
 
 .photo-upload__button {
   @include reset-margin;
+  display: block;
+  margin: 0 auto;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 18px;
-  color: $red;
+  color: $accent-primary;
+}
+
+.photo-upload__button--crop {
+  border: none;
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+  background-image: url("../../img/icon-editor-crop.svg");
+}
+
+.photo-upload__button--fill {
+  border: none;
+  background-color: transparent;
+  width: 48px;
+  height: 43px;
+  background-image: url("../../img/icon-editor-fill.svg");
+}
+
+.photo-upload__button--contrast {
+  border: none;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../img/icon-editor-contrast.svg");
+}
+
+.button__merger {
+  @media (min-width: $larger-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.photo-upload__button--send {
+  width: 280px;
+  padding: 15px;
+  margin-bottom: 13px;
+  border: 3px solid $accent-primary;
+  border-radius: 27px;
+
+  @media (min-width: $larger-width) {
+    width: 260px;
+    margin-right: 12px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $largest-width) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 183px;
+    border-radius: 30px;
+  }
+}
+
+.photo-upload__button--cancel {
+  width: 280px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 3px solid $accent-primary;
+  border-radius: 24px;
+
+  @media (min-width: $larger-width) {
+    width: 260px;
+    margin-right: 12px;
+  }
+
+  @media (min-width: $largest-width) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 183px;
+    border-radius: 30px;
+  }
 }
 
 .photo-upload__button--disabled {
-  color: transparentize($blue, 0.9);
+  color: transparentize($text-dark, 0.9);
+  border-color: transparentize($text-dark, 0.9);
 }
