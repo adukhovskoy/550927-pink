@@ -5,10 +5,11 @@
 }
 
 .reviews__container {
-  padding-top: 40px;
-  padding-bottom: 36px;
+  padding-top: 42px;
+  padding-bottom: 42px;
 
   @media (min-width: $larger-width) {
+    padding-top: 60px;
     padding-bottom: 30px;
   }
 
@@ -107,7 +108,7 @@
   display: flex;
   justify-content: center;
 
-  @media (min-width: $larger-width) {
+  @media (min-width: $largest-width) {
     @include visually-hidden;
   }
 }
@@ -124,12 +125,12 @@
   display: block;
   width: 13px;
   height: 13px;
-  background-color: $bk-dark;
-  border: 3px solid $bk-light;
+  border: 3px solid $bk-dark;
+  border-radius: 50%;
+  background-color: transparentize($color: $text-dark, $amount: 0.7);
 }
 
 .reviews__slider-button--selected {
-  border-radius: 50%;
   border: 3px solid $bk-darkest;
 }
 

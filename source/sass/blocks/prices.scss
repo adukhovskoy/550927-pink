@@ -1,7 +1,7 @@
 .prices {
   padding-bottom: 47px;
   margin-bottom: 38px;
-  padding-top: 95px;
+  padding-top: 90px;
   font-family: $main-font;
   font-size: 18px;
   line-height: 30px;
@@ -11,7 +11,7 @@
   background-size: contain;
 
   @media (min-width: $larger-width) {
-    padding-top: 89px;
+    padding-top: 77px;
     padding-bottom: 27px;
     margin-bottom: 45px;
   }
@@ -87,7 +87,7 @@
     height: 40px;
   }
 
-  @media (min-width: $larger-width) {
+  @media (min-width: $largest-width) {
     height: 50px;
   }
 }
@@ -151,7 +151,7 @@
     height: 46px;
   }
 
-  @media (min-width: $larger-width) {
+  @media (min-width: $largest-width) {
     height: 60px;
   }
 }

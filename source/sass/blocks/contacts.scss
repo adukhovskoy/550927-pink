@@ -16,6 +16,7 @@
 
 .contacts__item {
   margin-bottom: 20px;
+  width: 300px;
 
   &:last-child {
     @media (min-width: $larger-width) {
@@ -30,7 +31,9 @@
   }
 
   &:nth-last-child(2) {
-    order: 2;
+    @media (min-width: $largest-width) {
+      order: 2;
+    }
   }
 }
 

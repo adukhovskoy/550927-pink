@@ -20,3 +20,9 @@
     margin: 0 auto;
   }
 }
+
+.page-footer--main-page {
+  @media (max-width: $small-width) {
+    @include visually-hidden;
+  }
+}

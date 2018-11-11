@@ -19,7 +19,7 @@
   @media (min-width: $larger-width) {
     padding-top: 35px;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
   }
 
   @media (min-width: $largest-width) {
@@ -30,9 +30,12 @@
 }
 
 .features__header--last {
+  margin-bottom: 30px;
+
   @media (min-width: $larger-width) {
     width: 500px;
     padding-top: 0;
+    margin-bottom: 3px;
   }
 
   @media (min-width: $largest-width) {
@@ -44,7 +47,7 @@
   @include reset-list;
   position: relative;
   margin: 0 auto;
-  padding-top: 110px;
+  padding-top: 82px;
   background-color: $bk-dark;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -52,7 +55,7 @@
 
   @media (min-width: $larger-width) {
     padding-top: 115px;
-    padding-bottom: 40px;
+    padding-bottom: 44px;
     padding-left: 330px;
     background-image:
       url("../../img/iphone-screen-3-tablet@1x.png"),
@@ -63,12 +66,19 @@
     background-size:
       268px 483px,
       auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../../img/iphone-screen-3-tablet@2x.png"),
+        url("../../img/bg-triangle-white.svg");
+    }
   }
 
   @media (min-width: $largest-width) {
     padding-top: 0;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 32px;
     flex-direction: row;
     justify-content: center;
     background-image: url("../../img/bg-triangle-white.svg");
@@ -106,8 +116,8 @@
   }
 
   @media (min-width: $largest-width) {
-    width: 300px;
-    padding-top: 360px;
+    width: 280px;
+    padding-top: 354px;
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -117,10 +127,12 @@
 
     &:nth-child(2) {
       background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+      background-position: top -2px left -3px;
     }
 
     &:nth-child(3) {
       background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+      background-position: top -2px left -3px;
     }
   }
 
@@ -129,22 +141,31 @@
       margin-bottom: 0;
       padding-bottom: 318px;
       background-image: url("../../img/iphone-screen-mobile@1x.png");
+      background-size: 157px 320px;
       background-repeat: no-repeat;
       background-position: bottom -40px center;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/iphone-screen-mobile@2x.png");
+      }
     }
   }
 }
 
-.features__item--research {
-  padding-left: 380px;
-  padding-top: 40px;
-  padding-bottom: 30px;
+.features__item.features__item--research {
+  position: relative;
+  padding-left: 330px;
+  padding-top: 32px;
+  padding-bottom: 67px;
+  margin-top: 63px;
 
   @media (min-width: $largest-width) {
     margin: 0 auto;
-    padding-top: 65px;
-    padding-bottom: 120px;
+    padding-top: 90px;
+    padding-bottom: 115px;
+    padding-left: 375px;
     width: 960px;
+    background-color: $bk-dark;
   }
 
   @media (max-width: $larger-width - 1) {
@@ -155,7 +176,7 @@
 .features__link {
   @include reset-margin;
   display: block;
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 14px;
   color: $accent-primary;
   text-decoration: underline;
@@ -163,6 +184,49 @@
   @media (min-width: $largest-width) {
     font-size: 18px;
     font-weight: 400;
+  }
+}
+
+.features__hit {
+  position: absolute;
+  width: 238px;
+  height: 276px;
+  top: 0;
+  left: 20px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../img/icon-timer.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $largest-width) {
+    left: 10px;
+    width: 300px;
+    height: 345px;
+    padding-top: 46px;
+  }
+}
+
+.features__hit-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding-bottom: 10px;
+  border: 14px solid $accent-primary;
+  border-radius: 50%;
+  font-size: 96px;
+  font-weight: bold;
+  text-align: center;
+  color: $accent-primary;
+
+  @media (min-width: $largest-width) {
+    width: 250px;
+    height: 250px;
+    font-size: 120px;
   }
 }
 
@@ -182,7 +246,7 @@
 
   @media (min-width: $largest-width) {
     width: 240px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
@@ -190,18 +254,20 @@
 }
 
 .features__name--research {
-  width: 170px;
+  width: 300px;
   font-size: 30px;
   line-height: 35px;
-
-  @media (min-width: $larger-width) {
-    margin-left: 0;
-  }
+  margin-left: 0;
 
   @media (min-width: $largest-width) {
     margin-left: 0;
-    width: 300px;
     text-align: left;
+  }
+
+  @media (min-width: $largest-width - 1) {
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -216,14 +282,14 @@
   color: $text-dark;
 
   @media (min-width: $larger-width) {
-    width: 300px;
+    width: 310px;
     margin-left: 0;
     font-size: 14px;
     text-align: left;
   }
 
   @media (min-width: $largest-width) {
-    width: 230px;
+    width: 240px;
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
@@ -234,13 +300,18 @@
 
 .features__description--research {
   @media (min-width: $larger-width) {
+    width: 300px;
     margin-left: 0;
   }
 
   @media (min-width: $largest-width) {
+    width: 525px;
     margin-left: 0;
     margin-bottom: 35px;
-    width: 500px;
     text-align: left;
+
+    & br {
+      display: none;
+    }
   }
 }

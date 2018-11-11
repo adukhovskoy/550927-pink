@@ -1,4 +1,61 @@
 .pink-logo {
-  //temp to bypass npm test
-  display: flex;
+  width: 75px;
+  height: 23px;
+
+  @media (min-width: $larger-width) {
+    width: 147px;
+    height: 40px;
+  }
+
+  @media (min-width: $largest-width) {
+    width: 200px;
+  }
+}
+
+.pink-logo__image {
+  display: none;
+  fill: $bk-light;
+  color: $bk-light;
+
+  @media (min-width: $largest-width) {
+    fill: $accent-primary;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-primary;
+  }
+
+  &:active {
+    fill: $accent-primary;
+    color: $bk-light;
+    opacity: 0.3;
+  }
+}
+
+.pink-logo__image--footer {
+  fill: $accent-primary;
+  color: $bk-darkest;
+
+  &:active {
+    color: $bk-darkest;
+  }
+}
+
+.pink-logo__image--mobile {
+  @media (max-width: $larger-width - 1) {
+    display: block;
+  }
+}
+
+.pink-logo__image--tablet {
+  @media (min-width: $larger-width) and (max-width: $largest-width - 1) {
+    display: block;
+  }
+}
+
+.pink-logo__image--desktop {
+  @media (min-width: $largest-width) {
+    display: block;
+  }
 }

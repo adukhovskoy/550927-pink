@@ -1,11 +1,19 @@
 .htmlacademy-logo {
+  width: 150px;
+  padding-top: 5px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  font-family: $main-font;
+
+  @media (min-width: $largest-width) {
+    width: 200px;
+  }
 }
 
 .htmlacademy-logo__text {
   @include reset-margin;
-  font-family: $main-font;
+  margin-right: 15px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -19,7 +27,21 @@
 }
 
 .htmlacademy-logo__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 27px;
+  height: 34px;
+
+  &:hover svg,
+  &:focus svg {
+    fill: $bk-darkest;
+  }
+
+  &:active svg {
+    fill: transparentize($color: $bk-darkest, $amount: 0.7);
+  }
+}
+
+.htmlacademy-logo__link svg {
+  fill: $accent-primary;
+  width: 100%;
+  height: 100%;
 }

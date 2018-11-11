@@ -62,7 +62,6 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
-  outline: 1px solid black;
 }
 
 .contest__fieldsetwrapper--names {
@@ -140,12 +139,14 @@
 
 .contest__fieldset--app {
   @media (min-width: $larger-width) {
-    border: 2px solid red;
+    border: 2px solid $bk-dark;
   }
 }
 
 .contest__fieldset--contacts {
-  border: 2px solid red;
+  @media (min-width: $larger-width) {
+    border: 2px solid $bk-dark;
+  }
 
   @media (min-width: $largest-width) {
     padding-left: 57px;
@@ -154,7 +155,7 @@
 }
 
 .contest__fieldset--archivements {
-  border: 2px solid red;
+  border: 2px solid $bk-dark;
 
   @media (min-width: $larger-width) {
     padding-left: 58px;
@@ -173,7 +174,7 @@
   @media (min-width: $larger-width) {
     padding-left: 57px;
     padding-right: 57px;
-    border: 2px solid red;
+    border: 2px solid $bk-dark;
   }
 
   @media (min-width: $largest-width) {
@@ -206,7 +207,6 @@
   margin-bottom: 20px;
   text-align: center;
   line-height: 18px;
-  outline: 1px solid green;
 }
 
 .contest__legend--contacts {
@@ -252,7 +252,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 11px;
-  outline: 1px solid green;
 }
 
 .contest__fieldwrapper--names {
@@ -345,6 +344,9 @@
 }
 
 .contest__fieldwrapper--radio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   padding-left: 48px;
   margin-bottom: 35px;
 
@@ -377,11 +379,88 @@
 }
 
 .contest__label--archivements {
+  position: relative;
   padding-right: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #e5e5e5;
+    background-color: $bk-light;
+  }
 
   @media (min-width: $larger-width) {
     padding-left: 60px;
+
+    &::before {
+      left: 0;
+    }
   }
+}
+
+.contest__label--app {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    display: block;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #e5e5e5;
+    background-color: $bk-light;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: -38px;
+    top: 13px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $accent-primary;
+    background-color: $accent-primary;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $larger-width) {
+    &::before {
+      left: -40px;
+    }
+
+    &::after {
+      left: -28px;
+    }
+  }
+}
+
+.contest__input[type="radio"]:focus + .contest__label--app::before {
+  outline: 2px solid $bk-darkest;
+}
+
+.contest__input[type="radio"]:checked + .contest__label--app::after {
+  display: block;
+}
+
+
+.contest__input[type="checkbox"]:focus + .contest__label--archivements::before {
+  outline: 2px solid $bk-darkest;
+}
+
+.contest__input[type="checkbox"]:checked + .contest__label--archivements::before {
+  background-image: url("../../img/icon-check.svg");
+  background-size: 22px 16px;
+  background-repeat: no-repeat;
+  background-position: left 50% top 50%;
 }
 
 .contest__accent {
