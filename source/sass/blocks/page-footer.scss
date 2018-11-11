@@ -26,3 +26,9 @@
     @include visually-hidden;
   }
 }
+
+.page-footer__logo {
+  @media (min-width: $largest-width) {
+    width: 200px;
+  }
+}

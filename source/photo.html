@@ -207,14 +207,31 @@
         <div class="photo-upload__controls">
           <ul class="photo-upload__list">
             <li class="photo-upload__item">
-              <button class="photo-upload__button photo-upload__button--crop" type="button" action="submit"><span class="visually-hidden">Обрезать</span></button>
+              <button class="photo-upload__button photo-upload__button--instrument photo-upload__button--crop photo-upload__button--selected"
+                type="button" action="submit">
+                <span class="visually-hidden">Обрезать</span>
+                <svg class="icon-editor-crop" width="44" height="44">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use>
+                </svg>
+              </button>
             </li>
             <li class="photo-upload__item">
-              <button class="photo-upload__button photo-upload__button--fill" type="button" action="submit"><span class="visually-hidden">Залить</span></button>
+              <button class="photo-upload__button photo-upload__button--instrument photo-upload__button--fill" type="button"
+                action="submit">
+                <span class="visually-hidden">Залить</span>
+                <svg class="icon-editor-fill" width="48" height="44">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-fill"></use>
+                </svg>
+              </button>
             </li>
             <li class="photo-upload__item">
-              <button class="photo-upload__button photo-upload__button--contrast" type="button" action="submit"><span
-                  class="visually-hidden">Негатив</span></button>
+              <button class="photo-upload__button photo-upload__button--instrument photo-upload__button--contrast" type="button"
+                action="submit">
+                <span class="visually-hidden">Негатив</span>
+                <svg class="icon-editor-contrast" width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
+                </svg>
+              </button>
             </li>
           </ul>
           <ul class="photo-upload__range-list">

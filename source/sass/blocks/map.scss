@@ -5,7 +5,7 @@
   margin-right: auto;
   margin-left: auto;
   background-image: url("../img/bg-map-mobile@1x.png");
-  background-size: 320px auto;
+  background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
 
@@ -14,31 +14,20 @@
     height: 375px;
     margin-top: 0;
     background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-size: 700px auto;
-    background-position: left -20px bottom -129px;
   }
 
   @media (min-width: $largest-width) {
     width: 100%;
     height: 500px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-size: 1200px auto;
-    background-position: left -120px bottom -195px;
   }
 }
 
 .map__triangle {
   width: 100%;
-  height: 33px;
+  height: 100%;
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
   background-size: contain;
-
-  @media (min-width: $larger-width) {
-    height: 68px;
-  }
-
-  @media (min-width: $largest-width) {
-    height: 100px;
-  }
+  background-position: top left;
 }

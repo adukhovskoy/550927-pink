@@ -24,8 +24,11 @@
   align-items: center;
 
   @media (max-width: $larger-width - 1) {
-    min-height: 110px;
     background: transparentize($color: #000000, $amount: 0.7);
+  }
+
+  @media (min-width: $larger-width) {
+    min-height: 110px;
   }
 
   @media (min-width: $largest-width) {

@@ -561,6 +561,16 @@
     width: 300px;
     margin-bottom: 0;
   }
+
+  &:hover,
+  &:focus {
+    background-color: darken($accent-secondary, 5%);
+  }
+
+  &:active {
+    background-color: darken($accent-secondary, 10%);
+    color: transparentize($text-light, $amount: 0.7);
+  }
 }
 
 .contest__note {
