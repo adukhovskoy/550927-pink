@@ -138,10 +138,20 @@
   display: block;
   width: 22px;
   height: 41px;
+  opacity: 0.3;
 
   @media (max-width: $larger-width - 1) {
     @include visually-hidden;
   }
+}
+
+.reviews__slider-arrow:hover,
+.reviews__slider-arrow:focus {
+  opacity: 0.6;
+}
+
+.reviews__slider-arrow:active {
+  opacity: 0.1;
 }
 
 .reviews__slider-arrow--previous {

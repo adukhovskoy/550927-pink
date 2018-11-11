@@ -181,6 +181,11 @@
   @media (min-width: $larger-width) {
     top: 29px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-primary;
+  }
 }
 
 .photo-upload__range-pointer--fill {
@@ -272,6 +277,16 @@
   border: 3px solid $accent-primary;
   border-radius: 27px;
 
+  &:focus,
+  &:hover {
+    color: $text-light;
+    background-color: $accent-primary;
+  }
+
+  &:active {
+    color: transparentize($text-light, 0.7);
+  }
+
   @media (min-width: $larger-width) {
     width: 260px;
     margin-right: 12px;
@@ -290,8 +305,22 @@
   width: 280px;
   padding: 15px;
   margin-bottom: 20px;
-  border: 3px solid $accent-primary;
+  border: 3px solid transparentize($text-dark, 0.9);
   border-radius: 24px;
+  color: transparentize($text-dark, 0.9);
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: transparentize($text-dark, 0.7);
+    color: transparentize($text-dark, 0.7);
+  }
+
+  &:focus {
+    background-color: transparentize($text-dark, 0.7);
+    color: transparentize($text-light, 0.7);
+  }
+
 
   @media (min-width: $larger-width) {
     width: 260px;
@@ -304,9 +333,4 @@
     width: 183px;
     border-radius: 30px;
   }
-}
-
-.photo-upload__button--disabled {
-  color: transparentize($text-dark, 0.9);
-  border-color: transparentize($text-dark, 0.9);
 }
