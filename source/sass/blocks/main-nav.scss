@@ -14,6 +14,11 @@
 
 .main-nav__list {
   @include reset-list;
+  background-color: $bk-darkest;
+
+  @media (min-width: $larger-width) {
+    background-color: transparent;
+  }
 
   @media (min-width: $largest-width) {
     display: flex;

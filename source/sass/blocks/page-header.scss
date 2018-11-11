@@ -23,11 +23,16 @@
   justify-content: flex-start;
   align-items: center;
 
-  @media (min-width: $larger-width) {
+  @media (max-width: $larger-width - 1) {
     min-height: 110px;
+    background: transparentize($color: #000000, $amount: 0.7);
   }
 
   @media (min-width: $largest-width) {
     padding-left: 0;
   }
+}
+
+.page-header__logo--filled {
+  background-color: $bk-darkest;
 }

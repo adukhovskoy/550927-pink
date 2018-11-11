@@ -1,7 +1,6 @@
 .reviews {
   font-family: $main-font;
   background-color: $text-light;
-  outline: 2px solid black;
 }
 
 .reviews__container {
@@ -9,17 +8,17 @@
   padding-bottom: 42px;
 
   @media (min-width: $larger-width) {
+    position: relative;
     padding-top: 60px;
     padding-bottom: 30px;
   }
 
   @media (min-width: $largest-width) {
-    position: relative;
     padding-top: 185px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 20px;
-    background-image: url("../../img/icon-quotes.svg");
+    background-image: url("../img/icon-quotes.svg");
     background-size: 80px 64px;
     background-repeat: no-repeat;
     background-position: left 50% top 20%;
@@ -148,11 +147,11 @@
 .reviews__slider-arrow--previous {
   top: 52%;
   left: 10px;
-  background-image: url("../../img/icon-review-arrow-left.svg");
+  background-image: url("../img/icon-review-arrow-left.svg");
 }
 
 .reviews__slider-arrow--next {
   top: 52%;
   right: 10px;
-  background-image: url("../../img/icon-review-arrow-right.svg");
+  background-image: url("../img/icon-review-arrow-right.svg");
 }

@@ -6,7 +6,7 @@
   font-size: 18px;
   line-height: 30px;
   background-color: $bk-dark;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -162,7 +162,7 @@
     right: 20px;
     width: 27px;
     height: 26px;
-    background-image: url("../../img/icon-no.svg");
+    background-image: url("../img/icon-no.svg");
     background-size: 27px 26px;
 
     @media (min-width: $larger-width) {
@@ -183,7 +183,7 @@
     right: 19px;
     width: 31px;
     height: 21px;
-    background-image: url("../../img/icon-yes.svg");
+    background-image: url("../img/icon-yes.svg");
     background-size: 31px 21px;
 
     @media (min-width: $larger-width) {
