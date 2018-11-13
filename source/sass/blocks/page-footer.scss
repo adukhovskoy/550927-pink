@@ -22,7 +22,7 @@
 }
 
 .page-footer--main-page {
-  @media (max-width: $small-width) {
+  @media (max-width: $larger-width - 1) {
     @include visually-hidden;
   }
 }

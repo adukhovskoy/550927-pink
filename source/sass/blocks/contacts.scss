@@ -6,8 +6,12 @@
 
 .contacts__list {
   @include reset-list;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $larger-width) {
+    width: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

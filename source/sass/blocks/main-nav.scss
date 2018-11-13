@@ -41,6 +41,11 @@
   padding: 8px;
   display: flex;
 
+  @media (max-width: $largest-width - 1) {
+    border-top: 1px solid transparentize(#ffffff, $amount: 0.85);
+    border-bottom: 1px solid black;
+  }
+
   @media (min-width: $largest-width) {
     min-height: 55px;
     margin-left: 64px;

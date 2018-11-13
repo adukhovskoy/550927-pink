@@ -1,5 +1,6 @@
 .page-header {
-  background-color: $bk-darkest;
+  position: relative;
+  background-color: transparentize(#000000, 0.7);
 }
 
 .page-header__container {
@@ -23,8 +24,8 @@
   justify-content: flex-start;
   align-items: center;
 
-  @media (max-width: $larger-width - 1) {
-    background: transparentize($color: #000000, $amount: 0.7);
+  @media (max-width: $largest-width - 1) {
+    border-bottom: 1px solid black;
   }
 
   @media (min-width: $larger-width) {
@@ -37,5 +38,7 @@
 }
 
 .page-header__logo--filled {
-  background-color: $bk-darkest;
+  @media (max-width: $largest-width - 1) {
+    background-color: $bk-darkest;
+  }
 }

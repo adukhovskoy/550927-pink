@@ -5,6 +5,14 @@
   <meta charset="utf-8">
   <title>Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -250,7 +258,9 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта, расположение нашего офиса</h2>
-      <div class="map__triangle"></div>
+      <div class="map__triangle">
+      </div>
+      <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CBFUV2eXDD"></iframe>
     </section>
   </main>
   <footer class="page-footer page-footer--main-page">
