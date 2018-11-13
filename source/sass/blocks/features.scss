@@ -48,39 +48,32 @@
   position: relative;
   margin: 0 auto;
   padding-top: 82px;
-  background-color: $bk-dark;
-  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-width: $larger-width) {
+    max-width: 660px;
     padding-top: 115px;
     padding-bottom: 44px;
     padding-left: 330px;
-    background-image:
-      url("../img/iphone-screen-3-tablet@1x.png"),
-      url("../img/bg-triangle-white.svg");
-    background-position:
-      bottom left 20px,
-      top left;
-    background-size:
-      268px 483px,
-      auto;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: bottom left 20px;
+    background-size: 268px 483px;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image:
-        url("../img/iphone-screen-3-tablet@2x.png"),
-        url("../img/bg-triangle-white.svg");
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
     }
   }
 
   @media (min-width: $largest-width) {
+    max-width: 960px;
     padding-top: 0;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 32px;
-    flex-direction: row;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     background-image: url("../img/bg-triangle-white.svg");
     background-position: top left;
     background-size: contain;
@@ -88,19 +81,21 @@
 }
 
 .features__list-wrapper {
+  width: auto;
   margin: 0 auto;
-  max-width: 320px;
+  background-color: $bk-dark;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (min-width: $larger-width) {
-    max-width: 660px;
   }
 
   @media (min-width: $largest-width) {
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 960px;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 

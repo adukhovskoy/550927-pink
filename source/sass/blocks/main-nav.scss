@@ -17,7 +17,7 @@
   background-color: $bk-darkest;
 
   @media (min-width: $larger-width) {
-    background-color: transparent;
+    background-color: $bk-darkest;
   }
 
   @media (min-width: $largest-width) {
@@ -26,6 +26,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: transparent;
   }
 }
 

@@ -85,16 +85,8 @@
 
 .gallery__image-wrapper {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-
-  @media (min-width: $larger-width) {
-    width: 700px;
-  }
-
-  @media (min-width: $largest-width) {
-    width: 1200px;
-  }
 }
 
 .gallery__image-wrapper h3 {
